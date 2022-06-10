@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <HeaderComp :logo="'logo'"/>
-    <MainComp/>
-    <CardComp/>
+    <HeaderComp/>
+    <MainComp :url="apiUrl"/>
+    <!-- <CardCompt/> -->
   </div>
 </template>
 
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
-import CardComp from './components/CardComp.vue'
+// import CardComp from './components/CardComp.vue'
 export default {
   name: 'App',
   components: {
     HeaderComp,
     MainComp,
-    CardComp
+    // CardComp
+  },
+  data(){
+    return{
+      apiUrl: 'https://flynn.boolean.careers/exercises/api/array/music'
+    }
   }
 }
 </script>
