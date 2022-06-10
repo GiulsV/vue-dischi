@@ -1,33 +1,37 @@
 <template>
   <div id="app">
-    <HeaderComponent :logo="'logo'"/>
-    <MainComponent/>
-    <CardComponent/>
+    <HeaderComp :logo="'logo'"/>
+    <MainComp/>
+    <CardComp/>
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
-import MainComponent from './components/MainComponent.vue'
-import CardComponent from './components/CardComponent.vue'
-
+import HeaderComp from './components/HeaderComp.vue'
+import MainComp from './components/MainComp.vue'
+import CardComp from './components/CardComp.vue'
 export default {
   name: 'App',
   components: {
-    HeaderComponent,
-    MainComponent,
-    CardComponent
+    HeaderComp,
+    MainComp,
+    CardComp
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
+  // text-align: center;
+  // color: #2c3e50;
+  // margin-top: 60px;
 }
 </style>

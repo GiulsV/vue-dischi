@@ -1,4 +1,4 @@
-# vue-dischi
+# vue-dischi-1
 
 ## Project setup
 ```
