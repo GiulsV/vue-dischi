@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <HeaderComponent/>
+    <HeaderComponent :logo="'logo'"/>
     <MainComponent/>
+    <CardComponent/>
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue'
+import CardComponent from './components/CardComponent.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    CardComponent
   }
 }
 </script>
