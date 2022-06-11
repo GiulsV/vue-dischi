@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style lang="scss">
+// @import'~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/scss/bootstrap';
+
 *{
   margin: 0;
   padding: 0;
