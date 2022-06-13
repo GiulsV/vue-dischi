@@ -1,37 +1,37 @@
 <template>
-  <div class="card align-items-center pt-3 mx-3">
-    <img :src="card.poster" :alt="card.genre" class="card-img-top" />
+   <div class="card align-items-center pt-3 mx-3">
+    <img :src="record.poster" :alt="record.title" class="card-img-top" />
     <div class="card-body">
       <h5 class="card-title text-center mt-3">
-        {{ card.title }}
+        {{ record.title }}
       </h5>
       <div class="pb-5 d-flex flex-column .justify-content-start text-center">
         <span class="card-text">
-          {{ card.author }}
+          {{ record.author }}
         </span>
         <span class="card-text">
-          {{ card.year }}
+          {{ record.year }}
         </span>
       </div>
     </div>
-  </div>
+  </div> 
 </template>
 
 <script>
 export default {
   name: "CardComp",
   props: {
-    card: Object,
+    record: Object,
   },
 };
 </script>
 
+
 <style lang="scss" scoped>
 .card {
   background-color: #2f3a46;
-//   height: 350px;
-width: 200px;
-
+  height: 350px;
+  width: 200px;
   img {
     width: 70%;
   }
